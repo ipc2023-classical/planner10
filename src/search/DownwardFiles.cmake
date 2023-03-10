@@ -747,7 +747,7 @@ fast_downward_plugin(
         pdbs/validation
         pdbs/zero_one_pdbs
         pdbs/zero_one_pdbs_heuristic
-    DEPENDS CAUSAL_GRAPH MAX_CLIQUES PRIORITY_QUEUES SAMPLING SUCCESSOR_GENERATOR TASK_PROPERTIES VARIABLE_ORDER_FINDER LANDMARK_CUT_HEURISTIC
+    DEPENDS CAUSAL_GRAPH MAX_CLIQUES PRIORITY_QUEUES SAMPLING SUCCESSOR_GENERATOR TASK_PROPERTIES VARIABLE_ORDER_FINDER LANDMARK_CUT_HEURISTIC FF_HEURISTIC
 )
 
 fast_downward_plugin(
@@ -788,7 +788,7 @@ fast_downward_plugin(
 		red_black/red_black_task
 		red_black/red_black_heuristic
 		red_black/dtg_operators
-	DEPENDS FF_HEURISTIC	
+	DEPENDS FF_HEURISTIC
 )
 
 fast_downward_add_plugin_sources(PLANNER_SOURCES)
