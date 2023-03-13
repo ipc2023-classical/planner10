@@ -42,7 +42,7 @@ Stage: run
     pypy3 /planner/fast-downward.py \
         --build ipc2023 \
         --plan-file "$PLANFILE" \
-        --overall-time-limit 30m \
+        --overall-time-limit 5m \
         "$DOMAINFILE" \
         "$PROBLEMFILE" \
         --search "eager_greedy([lsh(patterns=systematic(pattern_max_size=4), transform=adapt_costs(cost_type=ONE))])"
