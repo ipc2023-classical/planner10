@@ -18,6 +18,8 @@ Stage: build
     cd /planner
     pypy3 build.py ipc2023
 
+    strip --strip-all /planner/builds/ipc2023/bin/downward
+
 # Stage 2: Run the planner
 Bootstrap: docker
 From: ubuntu:22.04
@@ -49,9 +51,9 @@ Stage: run
 
 # Define meta data
 %labels
-Name        OpCount4Sat
-Description TODO
-Authors
+Name        OpCount4Sat - Agile
+Description Operator Counting Heuristics for Satisficing Planning
+Authors     Daniel Matheus Doebber <dmdoebber@inf.ufsm.br>, André Grahl Pereira <agpereira@inf.ufrgs.br>, Augusto B. Corrêa <augusto.blaascorrea@unibas.ch>
 License     GPL 3
 Tracks      satisficing
 SupportsDerivedPredicates                       no
