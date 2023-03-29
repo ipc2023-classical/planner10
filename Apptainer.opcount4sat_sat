@@ -18,7 +18,7 @@ Stage: build
     cd /planner
     pypy3 build.py ipc2023
 
-    strip --strip-all /planner/builds/ipc2023/bin/downward1
+    strip --strip-all /planner/builds/ipc2023/bin/downward
 
 # Stage 2: Run the planner
 Bootstrap: docker
