@@ -53,7 +53,7 @@ Stage: run
 %labels
 Name        OpCount4Sat - Satistificng
 Description Operator Counting Heuristics for Satisficing Planning
-Authors
+Authors     Daniel Matheus Doebber <dmdoebber@inf.ufsm.br>, André Grahl Pereira <agpereira@inf.ufrgs.br>, Augusto B. Corrêa <augusto.blaascorrea@unibas.ch>
 License     GPL 3
 Tracks      satisficing
 SupportsDerivedPredicates                       no
